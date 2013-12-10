@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="AdView">
+        <attr name="adType">
+            <enum name="text" value="0"/>
+            <enum name="pic" value="1"/>
+        </attr>
+        <attr name="adCloseButtonBackground" format="reference"/>
+        <!-- <attr name="adNum" format="integer"/>
+        <attr name="adTime" format="integer"/> -->
+    </declare-styleable>
+
+</resources>

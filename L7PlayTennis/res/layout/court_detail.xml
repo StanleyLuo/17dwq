@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/court_title_bar"
+        style="@style/headerTitleBarStyle"
+        android:layout_width="match_parent" >
+
+        <ImageButton
+            android:id="@+id/court_detail_btn_back"
+            style="@style/HeaderButtonStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_back"
+            android:onClick="onBack"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_header_title"
+            style="@style/HeaderTitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/court_list_tile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/court_detail_iv_poster"
+            style="@style/DetailPosterStyle"
+            android:src="@drawable/poster_placeholder" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_title"
+            style="@style/DetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/court_detail_iv_poster"
+            android:layout_toRightOf="@+id/court_detail_iv_poster"
+            android:text="@string/court_title_demo" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_price"
+            style="@style/DetailInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/court_detail_tv_title"
+            android:layout_toRightOf="@+id/court_detail_iv_poster"
+            android:drawableLeft="@drawable/price"
+            android:text="@string/court_price_demo" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_tel"
+            style="@style/DetailInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/court_detail_tv_price"
+            android:layout_toRightOf="@+id/court_detail_iv_poster"
+            android:drawableLeft="@drawable/telephone"
+            android:text="@string/court_tel_demo"
+            android:textColorHighlight="@color/orange" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_address"
+            style="@style/DetailInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/court_detail_tv_tel"
+            android:layout_toRightOf="@+id/court_detail_iv_poster"
+            android:drawableLeft="@drawable/home"
+            android:text="@string/court_address_demo"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/court_detail_v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/court_detail_tv_address"
+            android:layout_margin="10dp"
+            android:background="@color/orange" />
+
+        <HorizontalScrollView
+            android:id="@+id/court_detail_hsv_gallary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/court_detail_v_line1"
+            android:layout_marginLeft="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/court_iv_poster1"
+                    style="@style/DetailPosterStyle"
+                    android:src="@drawable/poster_placeholder" />
+
+                <ImageView
+                    android:id="@+id/court_iv_poster2"
+                    style="@style/DetailPosterStyle"
+                    android:src="@drawable/poster_placeholder" />
+
+                <ImageView
+                    android:id="@+id/court_iv_poster3"
+                    style="@style/DetailPosterStyle"
+                    android:src="@drawable/poster_placeholder" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/court_detail_v_line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/court_detail_hsv_gallary"
+            android:layout_margin="10dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:id="@+id/court_detail_tv_description"
+            style="@style/DetailMainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/court_detail_v_line2"
+            android:lines="10"
+            android:singleLine="false"
+            android:textSize="15sp"
+            android:text="@string/court_description" />
+    </RelativeLayout>
+
+</LinearLayout>

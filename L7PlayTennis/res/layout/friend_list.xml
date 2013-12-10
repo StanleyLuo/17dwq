@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ListView
+        android:id="@+id/friend_list_lv_friends"
+        android:layout_below="@+id/friend_list_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/friend_list_title_bar"
+        style="@style/headerTitleBarStyle"
+        android:layout_width="match_parent" >
+
+        <ImageButton
+            android:id="@+id/friend_list_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBack"
+            android:background="@drawable/ic_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/friend_list_tv_header_title"
+            style="@style/HeaderTitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/friend_list_btn_filter"
+            android:layout_toRightOf="@id/friend_list_btn_back"
+            android:text="@string/friend_list_tile" />
+
+        <ImageButton
+            android:id="@+id/friend_list_btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/filter"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

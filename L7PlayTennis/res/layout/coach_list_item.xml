@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        style="@style/ListItemPosterStyle"
+        android:id="@+id/coach_iv_avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/court_pic_holder" />
+
+    <TextView
+        android:id="@+id/coach_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/coach_iv_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/coach_iv_avatar"
+        android:text="张三教练" />
+    
+    <ImageView
+        android:id="@+id/coach_iv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/coach_tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/coach_tv_name"
+        android:src="@drawable/symbol_female"/>
+    
+    <TextView
+        android:id="@+id/coach_tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/coach_tv_name"
+        android:layout_below="@id/coach_tv_name"
+        android:layout_marginTop="10dp"
+        android:text="25岁"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/coach_tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/coach_tv_age"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/coach_tv_age"
+        android:drawableLeft="@drawable/location2"
+        android:text="1.5km"
+        android:textSize="12sp" />
+        
+    <TextView
+        android:id="@+id/coach_tv_adderss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/coach_iv_avatar"
+        android:layout_toRightOf="@id/coach_iv_avatar"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/home"
+        android:text="深圳.福田.深南大道2088号"
+        android:textSize="12sp" />
+
+</RelativeLayout>

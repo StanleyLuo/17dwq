@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bold_title">#ff000000</color>
+    <color name="light_title">#656565</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#ff8432</color>
+    <color name="window_background">#f5f4f3</color>
+    <color name="footer_background">#e3e1df</color>
+    <color name="header_title_text">#FFd2d2d2</color>
+    <color name="header_button_text">#FF959595</color>
+    <color name="profile_gray">#e1e0de</color>
+    <color name="detail_text_gray">#898989</color>
+    <color name="chat_bg_rice_yellow">#f3f1da</color>
+    <color name="secondary_text_light_black">#C8000000</color>
+
+</resources>

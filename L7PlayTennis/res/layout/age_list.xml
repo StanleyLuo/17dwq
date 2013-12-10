@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/age_list_rg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp" >
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_under_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/age_under_10" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_10_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_10_18" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_19_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_19_25" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_26_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_26_30" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_31_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_31_40" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_41_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_41_50" />
+
+    <RadioButton
+        style="@style/FilterWindowRadioButton"
+        android:id="@+id/age_list_rb_above_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_above_50" />
+
+</RadioGroup>

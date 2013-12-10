@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/location_list_lv_district"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@color/light_title"
+        android:background="@color/white" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/location_list_lv_street"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="@color/light_title"
+        android:choiceMode="singleChoice"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

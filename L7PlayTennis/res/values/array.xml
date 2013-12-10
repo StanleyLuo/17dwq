@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provinces">
+        <item>@string/search_all</item>
+        <item>广东</item>
+        <item>广西</item>
+        <item>广东</item>
+    </string-array>
+    <string-array name="citys">
+        <item>@string/search_all</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>清远</item>
+        <item>珠海</item>
+        <item>惠州</item>
+    </string-array>
+    <string-array name="districts">
+        <item>@string/search_all</item>
+        <item>福田</item>
+        <item>罗湖</item>
+        <item>南山</item>
+    </string-array>
+    
+</resources>

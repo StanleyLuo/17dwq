@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/friend_list_item_iv_image"
+        style="@style/FriendInfoAvatar"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/male_palyer" />
+
+    <TextView 
+        style="@style/FriendInfoName"
+        android:id="@+id/friend_list_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/friend_list_item_iv_image"
+        android:text="风的儿子"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/friend_list_item_tv_name"
+        android:layout_toRightOf="@id/friend_list_item_tv_name"
+        android:src="@drawable/symbol_male" />  
+
+    <TextView
+        android:id="@+id/friend_list_item_tv_home_location"
+        style="@style/FriendInfoLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/friend_list_item_iv_image"
+        android:layout_toRightOf="@id/friend_list_item_iv_image"
+        android:drawableLeft="@drawable/home"
+        android:drawablePadding="2dp"
+        android:gravity="bottom"
+        android:text="广东.深圳.南山区。南油" />
+            
+    <TextView 
+        style="@style/FriendInfoDistance"
+        android:id="@+id/friend_list_item_tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/friend_list_item_iv_image"
+        android:drawableLeft="@drawable/location2"
+        android:text="500米"/> 
+    <TextView 
+        style="@style/FriendInfoSkillTitle"
+        android:id="@+id/friend_list_item_tv_skill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/friend_list_item_tv_home_location"
+        android:layout_alignParentRight="true"
+        android:text="网球大师"/>
+     <TextView 
+        style="@style/FriendInfoSkill"
+        android:id="@+id/friend_list_item_tv_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/friend_list_item_tv_home_location"
+        android:layout_alignBottom="@id/friend_list_item_tv_skill_title"
+        android:layout_toLeftOf="@id/friend_list_item_tv_skill_title"
+        android:text="5.0"/>                   
+</RelativeLayout>

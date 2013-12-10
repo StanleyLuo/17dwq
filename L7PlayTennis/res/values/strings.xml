@@ -1,0 +1,114 @@
+<resources>
+
+    <string name="app_name">17打网球</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">17打网球</string>
+    <string name="title_tennis">网球</string>
+    <string name="title_basketball">蓝球</string>
+    <string name="title_swiming">游泳</string>
+    <string name="title_badminton">羽毛球</string>
+    <string name="title_indoor_sport">室内健身</string>
+    <string name="title_court_name">球场名称</string>
+    <string name="court_address">球场地址：宝安区新安地铁站</string>
+    <string name="court_detail">场馆详情</string>
+    <string name="login">登录</string>
+    <string name="register">注册新账号</string>
+    <string name="court_map">场馆地图</string>
+    <string name="downloading">正在下载#8230;</string>
+    <string name="upgrade">版本更新</string>
+    <string name="account_tips">邮箱/手机号码</string>
+    <string name="password">密码</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="ignore">跳过</string>
+    <string name="back">返回</string>
+    <string name="exit">退出</string>
+    <string name="header_title">顶部标题</string>
+    <string name="profile_title">个人信息</string>
+    <string name="more_detail">查看更多详情</string>
+    <string name="head">头像</string>
+    <string name="start_search">找球友</string>
+    <string name="search_all">不限</string>
+    <string name="no_response">服务端没有响应！</string>
+    <string name="no_friend_result">没有符合条件的球友！</string>
+    <string name="user_not_exits">用户不存在！</string>
+    <string name="password_incorrect">密码不正确！</string>
+    <string name="filter">筛选</string>
+    <string name="skill_level_1">1.0 入门</string>
+    <string name="skill_level_2">2.0 初级</string>
+    <string name="skill_level_3">3.0 中级</string>
+    <string name="skill_level_4">4.0 熟练</string>
+    <string name="skill_level_5">5.0 精通</string>
+    <string name="skill_level_6">6.0 专业</string>
+    <string name="skill_level_7">7.0 大师</string>
+    <string name="skill_level_1_note">			正手：        能基本控制击球方向；击球落点深度不够。
+			反手：        一般, 较稳定的回击中速球。
+			接发球：    开始掌握节奏；发力时不能控制；
+			                  二发比一发慢而高；接发球较稳定。
+			截击：       稳定的正手截击；反手截击不稳定；
+			                 截击低球和远离身体的球有问题。
+			特殊击球：能接中速球，能稳定的挑高球。
+			比赛表现：接中速球稳定；双打站位基本是一前一后，
+			                  需要时能上网,但截击弱。	    </string>
+    <string name="friend_list_tile">球友-</string>
+    <string name="coach_list_tile">网球教练-</string>
+    <string name="court_list_tile">网球馆-</string>
+    <string name="friend_profile">球友资料</string>
+    <string name="location">所在地</string>
+    <string name="location_is">所在地:</string>
+    <string name="region">所在地</string>
+    <string name="skill_level">网球水平</string>
+    <string name="skill_level_is">网球水平:</string>
+    <string name="age">年龄.性别</string>
+    <string name="gender">性别</string>
+    <string name="gender_is">性别:</string>
+    <string name="age_is">年龄:</string>
+    <string name="age_num">%1$s岁</string>
+    <string name="distance_num">%1$s岁</string>
+    <string name="age_under_10">10岁以下</string>
+    <string name="age_10_18">11-18岁</string>
+    <string name="age_19_25">19-25岁</string>
+    <string name="age_26_30">26-30岁</string>
+    <string name="age_31_40">30-40岁</string>
+    <string name="age_41_50">41-30岁</string>
+    <string name="age_above_50">50岁以上</string>
+    <string name="fetching_data_from_server">正在从服务端获取数据...</string>
+    <string name="signature_sample">地球太危险了，快回火星吧！</string>
+    <string name="nickname_sample">张三犯二！</string>
+    <string name="play_style">打球风格</string>
+    <string name="send_msg">发送消息</string>
+    <string name="make_appointment">约TA打球</string>
+    <string name="check_contact">查看联系电话</string>
+    <string name="call_now">电话咨询</string>
+    <string name="your_choice">你选择了：</string>
+    <string name="locating_your_position">正在定位您的位置...</string>
+    <string name="gps_location">GPS定位城市</string>
+    <string name="country_cities">全国城市</string>
+    <string name="your_choice_city">你选择的城市：</string>
+    <string name="city_list">城市列表</string>
+    <string name="chat_demo">对于Android平台的资源类android.content.res.Resources可能很多网友比较陌生，一起来看看SDK上是怎么介绍的吧，Contains classes for accessing application resources, such as raw asset files, colors, drawables, media or other other files in the package, plus important device configuration details (orientation, input types, etc.) that affect how the application may behave.平时用到        </string>
+    <string name="server_setting">服务器设置</string>
+    <string name="press_to_intput_text">点击输入消息发送给TA</string>
+    <string name="send">发送</string>
+    <string name="court_title_demo">神仙岭国际网球中心</string>
+    <string name="court_tel_demo">83502911</string>
+    <string name="court_address_demo">深圳罗湖罗沙路北侧（莲塘投资大厦附近）</string>
+    <string name="court_price_demo">40-60元每小时</string>
+    <string name="court_description"> 周一至周五   
+17：00以前40/小时  
+17：00以后50   
+周六周日
+17：00以前50
+17：00以后60         </string>
+    <string name="coach_name_demo">林丹教练</string>
+    <string name="mobile_phone_demo">13800138000</string>
+    <string name="qq_demo">18655234565</string>
+    <string name="coach_description">    教练资质/证书： 
+国家体育总局职业鉴定中心颁发专项网球社会指导员证书
+国家级网球专项指导员，教学经验丰富，以理论结合技术动作教学，教学中把抽象的问题简单化，把复杂的技术动作形象化，培养学生学习兴趣，教学方式独特，独特的教学方式使学生掌握扎实基本功，为提高技术打下良好基础，教学宗旨;
+认真细致、诚恳耐心、诚于信、厚于德、敏于行。</string>
+    <string name="checking_new_version">正在检查最新版本....</string>
+    <string name="downloading_new_version">正在下载最新版本...</string>
+    <string name="download_finished">下载完成！</string>
+
+</resources>

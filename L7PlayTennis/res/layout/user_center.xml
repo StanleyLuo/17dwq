@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/common_title_bar"
+        style="@style/headerTitleBarStyle"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/btn_header_left"
+            style="@style/HeaderTitleBarBackButton"
+            android:background="@drawable/back_btn_selector"
+            android:onClick="onLeftHeaderButtonClick"
+            android:text="@string/back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            style="@style/HeaderTitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/btn_header_right"
+            android:layout_toRightOf="@id/btn_header_left"
+            android:text="@string/profile_title" />
+
+        <Button
+            android:id="@+id/btn_header_right"
+            style="@style/HeaderTitleBarBackButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/refresh"
+            android:onClick="onRightHeaderButtonClick"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TableLayout
+        style="@style/InfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="#fff" >
+
+            <TextView
+                style="@style/InfoItemLabel"
+                android:layout_height="wrap_content"
+                android:text="@string/head"
+                android:textColor="@color/bold_title" />
+
+            <ImageView
+                android:id="@+id/user_center_iv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:scaleType="centerInside"
+                android:src="@drawable/head" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                style="@style/InfoItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称" />
+
+            <EditText
+                android:id="@+id/user_center_et_nick_name"
+                style="@style/InfoItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="郎中" />
+
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                style="@style/InfoItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textColor="@color/bold_title" />
+
+            <EditText
+                style="@style/InfoItemText"
+                android:id="@+id/user_center_et_account"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="stanley@gmail.com" />
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />            
+        </TableRow>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+
+       <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                style="@style/InfoItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textColor="@color/bold_title" />
+
+            <RadioGroup
+                android:id="@+id/user_center_rg_gender"
+                style="@style/InfoItemText"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    style="@style/InfoItemSwitch"
+                    android:id="@+id/user_center_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+
+                <RadioButton
+                    style="@style/InfoItemSwitch"
+                    android:id="@+id/user_center_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" >
+                </RadioButton>
+            </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+       <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+             <TextView
+                style="@style/InfoItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/user_center_tv_age"
+                style="@style/InfoItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="25岁" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />                      
+       </TableRow>        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                style="@style/InfoItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在地"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/user_center_region"
+                style="@style/InfoItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="广东 深圳 宝安区" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />            
+        </TableRow>        
+    </TableLayout>
+
+    <TableLayout
+        style="@style/InfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="球龄"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/user_center_tv_sport_age"
+                style="@style/InfoItemText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="right"
+                android:text="3年" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网球水平"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/user_center_tv_skill_level"
+                style="@style/InfoItemText"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="3.0" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />        
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打球风格"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/user_center_tv_playstyle"
+                style="@style/InfoItemText"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="底线 上网 双打 单打" />
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />
+        </TableRow>  
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />        
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动目标"
+                android:textColor="@color/bold_title" />
+            
+            <LinearLayout
+                android:id="@+id/user_center_ly_goal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/user_center_cb_for_health"
+                    style="@style/InfoItemCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="锻炼身体" />
+
+                <CheckBox
+                    android:id="@+id/user_center_cb_for_friendship"
+                    style="@style/InfoItemCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交友" />
+
+                <CheckBox
+                    android:id="@+id/user_center_cb_for_game"
+                    style="@style/InfoItemCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="比赛竞技" />
+           
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/user_center_btn_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/more_detail"
+                android:src="@drawable/more_selector" />
+        </TableRow>              
+    </TableLayout>
+
+</LinearLayout>

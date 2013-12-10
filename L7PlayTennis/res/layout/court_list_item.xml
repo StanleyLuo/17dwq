@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        style="@style/ListItemPosterStyle"
+        android:id="@+id/court_iv_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/court_pic_holder" />
+
+    <TextView
+        android:id="@+id/court_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/court_iv_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/court_iv_photo"
+        android:text="西乡体育馆网球中心" />
+
+    <LinearLayout
+        android:id="@+id/court_lyt_services"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/court_tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/court_iv_photo" >
+
+        <ImageView
+            android:id="@+id/court_iv_service_shopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/court_service_shopping" />
+
+        <ImageView
+            android:id="@+id/court_iv_service_parking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/court_service_parking" />
+
+        <ImageView
+            android:id="@+id/court_iv_service_wc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/court_service_wc" />
+
+        <ImageView
+            android:id="@+id/court_iv_service_coach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/court_service_coaching" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/court_tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/court_lyt_services"
+        android:drawableLeft="@drawable/location2"
+        android:text="1.5km"
+        android:textSize="12sp" />
+        
+    <TextView
+        android:id="@+id/court_tv_adderss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/court_iv_photo"
+        android:layout_alignLeft="@+id/court_lyt_services"
+        android:drawableLeft="@drawable/home"
+        android:text="深圳.福田.深南大道2088号"
+        android:textSize="12sp" />
+
+</RelativeLayout>

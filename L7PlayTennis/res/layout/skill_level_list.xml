@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/skill_level_list_rg"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_1" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_2" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_3" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_4" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_5" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_6" />
+        <RadioButton
+        	style="@style/FilterWindowRadioButton"
+            android:id="@+id/skill_level_list_rb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/skill_level_7" />                                        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/skill_level_list_tv_note"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/detail_text_gray"
+        android:textColor="@color/white"
+        android:layout_weight="2"
+        android:singleLine="false"
+        android:lines="10"
+        android:paddingTop="20dp"
+        android:text="@string/skill_level_1_note"/>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/home_btn_find_friends"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_01" />
+
+            <ImageButton                
+                android:id="@+id/home_btn_find_coach"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_02" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton                
+                android:id="@+id/home_btn_find_court"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_03" />
+
+            <ImageButton                
+                android:id="@+id/home_btn_message"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_04" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/home_btn_nearby"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_05" />
+
+            <ImageButton
+                android:id="@+id/home_btn_user_center"
+                style="@style/HomeScreenMenuItem"
+                android:layout_weight="1"
+                android:src="@drawable/menu_06" />
+
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/home_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:contentDescription="@string/exit"
+            android:src="@drawable/button_back" />
+
+        <ImageButton
+            android:id="@+id/home_btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:contentDescription="@string/exit"
+            android:src="@drawable/button_settting" />
+
+        <TextView
+            style="@style/CurrentLocationTip"
+            android:id="@+id/home_tv_current_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/home_btn_setting"
+            android:text="@string/location_is"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

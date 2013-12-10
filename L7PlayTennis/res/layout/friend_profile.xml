@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+   <RelativeLayout
+        android:id="@+id/friend_list_title_bar"
+        style="@style/headerTitleBarStyle"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/friend_list_btn_back"
+            style="@style/HeaderTitleBarBackButton"
+            android:background="@drawable/back_btn_selector"
+            android:text="@string/back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/friend_list_tv_header_title"
+            style="@style/HeaderTitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/friend_profile" />
+    </RelativeLayout>
+
+   <RelativeLayout 
+       android:id="@+id/friend_profile_ly_image_show_block"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@drawable/frind_profile_bg">
+
+       <ImageButton
+           android:id="@+id/friend_profile_btn_add"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@null"
+           android:src="@drawable/btn_add" />
+       <ImageButton
+           android:id="@+id/friend_profile_btn_skill_level"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@null"
+           android:src="@drawable/skill_level" />
+       
+       <ImageView 
+           android:id="@+id/friend_profile_avator"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_above="@+id/friend_profile_tv_nickname"
+           android:layout_marginBottom="20dp"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/head"/>
+       <TextView
+           android:id="@+id/friend_profile_tv_nickname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_above="@+id/friend_profile_tv_signature"
+           android:layout_marginBottom="20dp"
+           android:ellipsize="end"
+           android:text="@string/nickname_sample"
+           android:textColor="@color/bold_title"
+           android:textSize="18sp" />
+       <TextView
+           android:id="@+id/friend_profile_tv_signature"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="20dp"
+           android:ellipsize="end"
+           android:text="@string/signature_sample"
+           android:textColor="@color/orange"
+           android:textSize="14sp" />
+    
+   </RelativeLayout>
+       <TableLayout
+        style="@style/InfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:stretchColumns="1" >
+
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/friend_profile_tv_location"
+                style="@style/InfoItemText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="right"
+                android:text="广东 深圳 福田区 车公庙" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />
+        <TableRow
+            style="@style/InfoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_style"
+                android:textColor="@color/bold_title" />
+
+            <TextView
+                android:id="@+id/friend_profile_tv_play_style"
+                style="@style/InfoItemText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="right"
+                android:text="单打. 双打 混双" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_gray" />        
+  </TableLayout>
+       
+       <Button
+           style="@style/FriendProfileOpBtn"
+           android:id="@+id/friend_profile_btn_send_msg"
+           android:layout_height="wrap_content"
+           android:text="@string/send_msg" />
+
+       <Button
+           style="@style/FriendProfileOpBtn"
+           android:id="@+id/friend_profile_btn_appointment"
+           android:layout_height="wrap_content"
+           android:text="@string/make_appointment" />
+
+       <Button
+           style="@style/FriendProfileOpBtn"
+           android:id="@+id/friend_profile_btn_check_contact"
+           android:layout_height="wrap_content"
+           android:text="@string/check_contact" />
+</LinearLayout>

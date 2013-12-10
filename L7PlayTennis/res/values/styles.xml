@@ -1,0 +1,231 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="ListTitle">
+        <item name="android:textColor">@color/bold_title</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:textColor">@color/light_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CommonBackgroundStyle">
+        <item name="android:background">@color/window_background</item>
+    </style>
+    <style name="omitEndTextStyle" parent="android:Widget.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>    
+    <style name="headerTitleBarStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/header_bar_bg</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="HeaderTitleBarText" parent="omitEndTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/header_title_text</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="HeaderTitleBarBackButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="HeaderTitleBarRightButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="InterPageDetailImageFrameStyle">
+        <item name="android:layout_width">155dp</item>
+ <!-- 208/1.5 = 138dp, 1.5 is density -->
+        <item name="android:layout_height">110dp</item>
+ <!-- 289/1.5 = 192dp -->
+    </style>
+
+    <style name="MovieDetailMainInfo">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="MovieDetailMainInfo.Price">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MovieDetailMainInfo.OtherText">
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style> 
+    <style name="MovieDetailMainInfo.SecondaryText">
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">62dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light_title</item>
+    </style>            
+    <style name="RatingBarStyleSmall">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/xratingbar_layer</item>
+        <item name="android:indeterminateDrawable">@drawable/xratingbar_layer</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>        
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="HomeScreenMenuItem">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#7F000000</item>
+     </style>
+     <style name="InfoBox">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>                
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/textbox_bg</item>
+     </style>
+     <style name="InfoItem">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+     </style>     
+     <style name="InfoItemLabel" >
+        <item name="android:ems">5</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor"> @color/bold_title</item>
+     </style>     
+     <style name="InfoItemText" >
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/detail_text_gray</item>
+     </style>     
+     <style name="InfoItemSwitch" >
+        <item name="android:textColor">@color/detail_text_gray</item>
+     </style>
+     <style name="InfoItemCheckBox" >
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/detail_text_gray</item>
+        <item name="android:textSize">12sp</item>
+     </style>
+
+     <style name="FriendInfoAvatar" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>        
+     </style>
+     <style name="FriendInfoName" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/bold_title</item>
+     </style>
+     <style name="FriendInfoLocation" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/detail_text_gray</item>
+     </style>
+     <style name="FriendInfoDistance" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/orange</item>
+     </style>
+     <style name="FriendInfoSkillTitle" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light_title</item>
+     </style> 
+     <style name="FriendInfoSkill" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/bold_title</item>
+     </style>
+     <style name="FriendProfileOpBtn" >
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/bold_title</item>
+     </style>
+     <style name="FilterWindowTabButton" >
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/bold_title</item>
+     </style> 
+  
+     <style name="FilterWindowRadioButton" >
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/bold_title</item>
+     </style>
+  
+     <style name="SelectedDeletable">
+        <item name="android:drawableRight">@drawable/btn_delete</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/orange</item>
+     </style>
+     <style name="CurrentLocationTip" >
+         <item name="android:drawableLeft">@drawable/location</item>
+         <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#CC000000</item>
+     </style>
+     <style name="ListItemPosterStyle" >
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">64dp</item> 
+     </style> 
+     <style name="HeaderButtonStyle" >
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item> 
+     </style>  
+     <style name="HeaderButtonStyle" >
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item> 
+     </style>  
+     <style name="DetailPosterStyle" >
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+     </style>  
+     <style name="DetailTitle" >
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+     </style>  
+     <style name="DetailInfoText" >
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_text_light_black</item>
+     </style>  
+     <style name="DetailMainText" >
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_text_light_black</item>
+     </style>               
+</resources>

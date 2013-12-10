@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stanley.core.view.HeaderBar 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:st="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    st:leftButtonBackground="@drawable/back"
+    st:rightButtonBackground="@drawable/filter"
+    st:title="@string/city_list" >
+
+</com.stanley.core.view.HeaderBar>
